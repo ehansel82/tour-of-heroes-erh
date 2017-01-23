@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [
-    BrowserModule, 
+    BrowserModule,
     FormsModule,
     RouterModule.forRoot([
       {
@@ -23,6 +23,10 @@ import { AppComponent } from './app.component';
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'detail/:id',
+        component: HeroDetailComponent
       },
       {
         path: '',
