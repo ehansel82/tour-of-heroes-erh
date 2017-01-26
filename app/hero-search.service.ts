@@ -12,4 +12,4 @@ export class HeroSearchService {
                .get(`app/heroes/?name=${term}`)
                .map((r: Response) => r.json().data as Hero[]);
   }
-}
+} 
